@@ -35,6 +35,8 @@ class Arena
 			playArena
 		elsif input.to_s == "4"
 			viewPlayer
+		elsif input == "exit" or input == "quit"
+			puts "Exiting arena"
 		else
 			menu
 		end
