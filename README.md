@@ -44,6 +44,5 @@ Addition heroes, additional special attack, additional stats or mechanism, sound
 
 Video Lessons:
 1) Class defining and inheritance
-2) Attr_accessor and class arrays
-3) Accessing and getting info from class
+2) Attr_accessor and class arrays, accessing and getting info from class
 4) Class interaction
