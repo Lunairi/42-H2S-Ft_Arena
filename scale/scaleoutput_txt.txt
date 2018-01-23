@@ -1,0 +1,27 @@
+lunairi@Arta:~/Downloads/Subjects/resources/scaleValidator$ ruby scale_validator.rb ft_arena.en.yml 
+Basic Object Oriented Class
+     Proper inheritance with classes
+          Object-oriented programming: 60 => 60
+          Adaptation & creativity: 30 => 30
+     Children Classes
+          Object-oriented programming: 20 => 80
+          Adaptation & creativity: 10 => 40
+Running & Playing ft_arena
+     Arena Text Output
+          Adaptation & creativity: 20 => 60
+          Object-oriented programming: 5 => 85
+     Creativity & Design
+          Adaptation & creativity: 10 => 70
+          Object-oriented programming: 5 => 90
+     Interface & Menu
+          Adaptation & creativity: 20 => 90
+          Object-oriented programming: 5 => 95
+     Error Handling
+          Adaptation & creativity: 10 => 100
+          Object-oriented programming: 5 => 100
+Bonus
+     Cool Bonuses
+          Adaptation & creativity: 25 => 25
+          Object-oriented programming: 25 => 25
+
+all good: ft_arena.en.yml is now valid !

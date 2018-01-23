@@ -1,6 +1,6 @@
 %******************************************************************************%
 %                                                                              %
-%                  sample.en.tex for LaTeX                                     %
+%                  ft_arena.en.tex for LaTeX                                   %
 %                  Made by : Michael Lu (mlu@student.42.fr)                    %
 %                                                                              %
 %******************************************************************************%
@@ -21,7 +21,8 @@
                           \subtitle{Introductory Object Oriented Programming}
                        \member{Michael Lu}{mlu@student.42.fr}
 \summary {
-  This project is about creating fighters who will battle it out in the arena
+  This project is about creating fighters who will battle it out in the arena to 
+  teach object oriented programming concepts
 }
 
 \maketitle
@@ -152,9 +153,9 @@
 		
 		\item Your project must be written in a language approved by
 		the hack high school program
-		\item You must create at least three unique children class
-		\item You must have a menu/selection screen for people to choose
-		the name and class/job/specialization of your fighter
+		\item You must create at least three unique children class all inheriting 
+		from same parent
+		\item You must have a menu/selection screen with proper loop handling
 		\item You must allow the ability for people to pick which fighter
 		they want to have fight against eachother in the arena
 		\item You must use at least two variables for the parent class:
@@ -173,14 +174,22 @@
 %******************************************************************************%
 \chapter{Mandatory part}
 
+		\warn{
+			The image example on this PDF are only examples, not what you need
+			to replicate. You can design your output, your menu, etc. however
+			you would like to design it. If you need help with design please
+			visit the tutorial video guides as there is a demo there for you to
+			see how the project should behave.
+		}
+
 	\begin{itemize}
 		\item The goal of this project is to create a simple program
-		that will take two fighters and make them fight eachother
+		that will take two fighters and make them fight each other
 		\item All fights will be one on one, so do not worry about having
-		more than two fighters fighting eachother at the same time
+		more than two fighters fighting each other at the same time
 		\item At the beginning of the program the users should have a menu
 		that allows them to create a fighter, start a fight in the arena,
-		and to see all the fights available (any extra stuff is fine)
+		and to see all the created fighters available (any extra stuff is fine)
 
 	\begin{center}
 		\includegraphics[width=0.6\textwidth]{images/menu.png}
