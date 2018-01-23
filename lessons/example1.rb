@@ -37,30 +37,36 @@ class Parent
 end
 
 
-# Inheritance
-class	Children < Parent
-
-	def initialize(value)
-		super(value)
-	end
-
-	def displayHealth
-		puts "Health: " + @health.to_s
-	end
-
-	def displayAttack
-		puts "Attack: " + @attack.to_s
-	end
-end
+# Example of parent behavior
+example = Parent.new(21)
+puts "Showing methods from parent: ", example.getHealth, example.getAttack
+# puts example.attack				# Will not work because attack is not a method but a variable
 
 
-# How to instanciate class
-example = Children.new(21)
-puts "Using parent methods first: ", example.getHealth, example.getAttack, "", 
-	"Using child methods now: "
-puts example.displayHealth, example.displayAttack
+# # Inheritance
+# class	Children < Parent
 
-example2 = Parent.new(4242)
-puts "Using parent methods first: ", example2.getHealth, example2.getAttack, "", 
-	"Using child methods now: "
-# puts example2.displayHealth, example2.displayAttack		# Will error because parent does not inherit from children
+# 	def initialize(value)
+# 		super(value)
+# 	end
+
+# 	def displayHealth
+# 		puts "Health: " + @health.to_s
+# 	end
+
+# 	def displayAttack
+# 		puts "Attack: " + @attack.to_s
+# 	end
+# end
+
+
+# # How to instanciate class
+# example = Children.new(21)
+# puts "Using parent methods first: ", example.getHealth, example.getAttack, "", 
+# 	"Using child methods now: "
+# puts example.displayHealth, example.displayAttack
+
+# example2 = Parent.new(4242)
+# puts "Using parent methods first: ", example2.getHealth, example2.getAttack, "", 
+# 	"Using child methods now: "
+# # puts example2.displayHealth, example2.displayAttack		# Will error because parent does not inherit from children

@@ -75,23 +75,23 @@ puts "Added one children to container"
 # Getting info out from the container
 example.array[0].displayAttack
 
-puts "", "Showing how to add more stuff"
+# puts "", "Showing how to add more stuff"
 
-i = 0
-while i < 10 do
-	example.add
-	puts "Adding children to container. Iteration: " + i.to_s
-	i += 1
-end
+# i = 0
+# while i < 10 do
+# 	example.add
+# 	puts "Adding children to container. Iteration: " + i.to_s
+# 	i += 1
+# end
 
-puts "", "Showing how to access all the stuff"
+# puts "", "Showing how to access all the stuff"
 
-i = 0
-while i < example.array.size do
-	example.array[i].displayAttack
-	puts "Iteration: " + i.to_s
-	i += 1
-end
+# i = 0
+# while i < example.array.size do
+# 	example.array[i].displayAttack
+# 	puts "Iteration: " + i.to_s
+# 	i += 1
+# end
 
 
 

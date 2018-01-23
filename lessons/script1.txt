@@ -1,0 +1,125 @@
+example1 script
+
+Hello everyone, my name is Michael one of the students here at 42 and I will be introducing you guys to some object oriented programming.
+
+Since you may already be using ruby or python you may or may not have experience with object oriented programming, but the focus of these
+projects is specifically for object oriented programming. 
+
+For this first video we will be looking at basic classes. How to define a class, how to inherit and how to instanciate them.
+
+Here is an example code I've drafted for you guys, so let's take a look.
+
+You can see here I set i to 42, this is very basic concept behind classes. 
+
+I have coded this project in ruby but it can be done in python as well.
+
+Variables are objects themselves, and for this reason they behave differently than variables in other languages.
+
+You can see in this first line I've commented it out because it will not compile, this is because i is set to 42 so it's a fixnum. 
+
+Here, let me show you.
+
+<uncomment line, attempt to compile, error>
+
+However we can fix this because keep in mind the variables are objects themselves. 
+
+<comment lines>
+
+Luckily there is a .to_s method that will output i as a string instead of a fixnum, allowing us to display it with another string.
+
+Of course if we only wanted to display the number itself we can just puts i.
+
+Let's move onto defining a class.
+
+Here we have a parent class already written. 
+
+You can have these classes anywhere, I recommend putting them in another text file that you can later import to your main ruby or python code.
+
+Inside these classes we will be putting methods, which will help create behaviors for the class.
+
+In this case we want the parent class to initialize with some starting value. In ruby you can do this by defining initialize
+
+Here we will set a instance variable health to 42, and we will set an instance variable of attack to the value being passed into the method
+
+In ruby there are other variables, for example you can use two @ signs and it will create a class variable, but we won't be needing that here
+
+I will write two getter methods, this will allow us to get the value of @health and @attack
+
+As with all def, we need to make sure we end them so the compiler will be happy.
+
+There we go, all done!
+
+I will now show you guys how simple it is to call methods from the parent class we just made.
+
+Here you can see I will create a variable called example, and set it equal to a new parent class.
+
+We will pass the value 21 to it so it gets stored into @attack.
+
+Now let's put string the output and see the results through compilation.
+
+Viola! You can see we called @health with the getHealth method, and @attack with the getAttack method.
+
+But wait, why wouldn't we just output the variable? 
+
+Answer is simple, when we structure the class like this in the code it will look for a method follow the period.
+
+For this reason, if you try puts example.attack it will not work, let me show you.
+
+<uncomment line, attempt to compile, error>
+
+A later video will show you how to handle this specific case but we will not be doing that in this video.
+
+<comment lines>
+
+Now that we understand how to make a class and call it's method let's talk about inheritance.
+
+<comment out example>
+
+The concept of inheritance is creating a class that will have its own property and everything from the class that it will inherit from.
+
+We will use the term parent for the class that the class is inheriting from.
+
+We will use the term children for the class that is doing the inheriting.
+
+Here you can see we still want to initialize @attack in the parent class which does not exist inside the children class
+
+So we can still do this, we will use the super which will call the initialize method of the parent class
+
+So here you can see we will still take the value for the children initialize method, but we will than pass it to the parent
+
+We will also write a few stuff to show that the children class really is inheriting from the parent
+
+Here we will display the variables @health and @attack that is inside the parent class, but we are putting these methods inside the children class
+
+Here we have displayHealth and displayAttack in the children, but the @health and @attack is in the parent
+
+This will work because we inherited the parent, so the children can use all the method and variables inside the parents
+
+Let's prove this, here we will uncomment these line of code and show you
+
+Here we will instanciate a children class and call both the parent methods that it inherited, and its own method
+
+Down here we will instanciate a parent class and call its own method, and try to inherit its children method
+
+You will see that if we tried to call the children method it wont work because the parent does not inherit from the children
+
+<uncomment line, compile, show error>
+
+But no worries, let's comment this out so you can see I'm not a liar
+
+<comment line, compile, show works>
+
+And that's it, the basic concept of creating children and parent classes and having children inherit from parents.
+
+I recommend practicing this on your own as you will need to use this structure for the project.
+
+Reason this is enforced is because you could write the same class and copy paste it over and over again, but that's just poor work ethics
+
+Instead create a parent class that all your children class has in common, and keep any unique methods inside your children
+
+You will have cleaner and happier code that way
+
+See you in the next video
+
+
+

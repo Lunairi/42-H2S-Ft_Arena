@@ -1,0 +1,127 @@
+example3 script
+
+Welcome back everyone to the second video, glad you came back for the very last video
+
+Now that you know how to make a class, inherit from a parent class, and even create a container to store all your children class, let's look at interaction between classes
+
+For this assignment you will need to have two different children class attacking eachother, this can be quite difficult if you don't know how to implement interactions between classes
+
+Concept is not hard, lets look at an example
+
+Each children has their own stats, own attributes and what not, for this reason all of them can take damage so we will add a takeDamage method to the parent that all children will have
+
+We will take the attack damage and subtract it from our health, that simple
+
+Now you can see in the children class we have made no changes, this is because the children class should be unique, anything shared traits should be in parents and that's exactly what we did
+
+Moving on, we will add an attack method in our container so we can get childrens to interact with eachother
+
+Why in the container? 
+
+You could do it outside of the container but that can be messy. 
+
+Since all the information is inside the container let's define all the behavior that deals with class interactions here
+
+That way you have direct access to everything in your array
+
+Remember from the last video we only needed to provide an index value to access the child class that is stored in that spot in the array
+
+The concept is similar here, we will take two index points and use that to call different children functions
+
+In this line you can see we have a variable one and two in the parameter for attack method
+
+We will find the child class at the array index of one, and make it take damage from the child class at the array index of two
+
+Since we need to know how much damage the attack is we will use getAttack on the attacking children, in this case the children indexed at two
+
+This will return the damage of that children, and the children class indexed at one will take damage
+
+Simple right?
+
+I added a long put string message to show you guys what it all looks like
+
+Children two attacked children one for X amount of damage
+
+Children one has only X amount of health left
+
+You can see I use to string alot because some of those values are fixnum, so to output it I needed to use to string
+
+Great, let's make them attack!
+
+In this example code you can see I add ten random children to the container and keep track of iteration for you
+
+Than in this line I call the method attack from the container with two random variable between zero and nine
+
+We should see the results when we compile it and it should be random each time
+
+Here in this put string I wanted to show the size of the array, this is a very powerful tool that will help you with the project
+
+Alright, let's check out the results
+
+<compile>
+
+Great it works!
+
+Looks cool huh?
+
+I can run this many time and you can see how the children is mercilessly attacking eachother
+
+<spam compile few more times>
+
+I bet you feel like you're ready for this project. 
+
+With everything here you are, but before we do let's show you guys an example of how you could implement your project
+
+<move to the src I made>
+
+Here you can see I wrote my own ft_arena and I had alot of fun.
+
+<run ruby>
+
+Here you can see a simple menu, I added three class types which you can see here
+
+<enter 1>
+
+Rememeber we need the characters to fight, so if I try to fight it will not work
+
+<enter 3>
+
+That's okay, let's create some characters
+
+<enter 2>
+
+So we have mergen, murmilllo and swordsingers.
+
+Let's make a murmillo called Michael, and a mergen called Joe, a good friend of mine
+
+<make char>
+
+All done, I even added a feature to check out their stats
+
+<enter 4>
+
+Cool, let's go ahead and make us attack
+
+<enter 3>
+
+Here you can see it wants us to select the player at specific index. 
+
+Seems familiar right?
+
+Let's go ahead and index 0 and 1
+
+<enter 0 and 1>
+
+Great, you can see the script is going and Joe and I are fighting 
+
+And that's the project in a nutshell!
+
+You are welcome to design the menu however you want, and output whatever message to the terminal as you please
+
+But make sure you absolutely follow the PDF and complete all the basic requirements
+
+Later if you feel more adventurous you can add cool bonuses, like sound effects, more than the required 3 class, and even skills like I have here
+
+The options are limitless, this is a simple game you are making, go crazy and have fun with object oriented program
+
+Good luck with the project! 

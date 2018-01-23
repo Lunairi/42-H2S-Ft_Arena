@@ -1,0 +1,97 @@
+example2 script
+
+Welcome back everyone to the second video, today we're going to go over some interesting concepts
+
+Remember in the last variable we couldn't just call a variable because it tried to find a method?
+
+We will look into how to deal with that with attr_accessor in ruby
+
+We will also be talking about creating arrays of clsses as well as accessing and getting info from these array of classes
+
+Here in this example you can see I've kept the parent and children class from the previous video
+
+But you may have noticed something new, the container class
+
+It's a good habit to try and contain everything within classes.
+
+This container class will help us hold the array of classes so we can create many classes and easily access them
+
+First you can see we once again defined a initialize method, but inside we have @array equals to open bracket close bracket
+
+This means we are initializing an array of an undefined amount of size, but we can continue to append to that array
+
+Here we will write a method to add classes to the array
+
+Here I will use i is equal to one plus rand forty two so we can pass this value to the children for their @attack
+
+Here we will set a variable equal to a new children class. 
+
+Great, lastly we can now append this and add this to our array
+
+There is two ways we can add to our array, either with these operators or using .push
+
+You could technically remove the whole add equals stuff and straight up put Children.new(i) into the array
+
+But for clairity of this video we will do it like this
+
+Great all done! Let's go ahead and show you how it works
+
+Here I will create a new container example, and we will go ahead and add one new chilren to the container
+
+Now to access the children we just made we'd access it like any array and start at the index zero which is where the class we just added is
+
+Let's go ahead and try this
+
+<compile, error>
+
+Uh oh we got an error, it seems that it's looking for an method called array[0] which is not what we want
+
+How do we fix this? We need to change the property of the variable to let the compiler know we are looking for an array, not a method
+
+To do this we will use attr_accessor in ruby. 
+
+For python it is a someone else.
+
+Here we will uncomment this line to attr_accessor our array that we made earlier
+
+Great, let's try compiling it again
+
+<compile, show it works>
+
+Look no errors and it displayed the attack from the children class!
+
+Pretty cool huh?
+
+We're not done yet, let's go a bit crazy.
+
+<uncomment other example>
+
+Here we will go ahead and add nine more children to the container.
+
+I will output the iteration so you can see how many children we are adding.
+
+Down here we will now go through and display attack of all the children
+
+You will see we used .size at the end of the array.
+
+This is because example.array is a array and because it is it has a size. 
+
+We want to go through all children inside the array, so .size will return us back the size
+
+Let's show all the attack of each children inside our array
+
+<compile, run code>
+
+That's it! 
+
+The video seemed like alot of stuff but I wanted to show that creating a class array is quite simple
+
+Accessing that array can be done through attr_accessor, and this will permit us to access and get info from the class
+
+This is a very powerful tool to stay organized and keep your code clean
+
+Although not required this will make the project much easier for you if you can implement a container with an array of classes
+
+That is it! Next video we will look into class interactions, good luck!
+
+
