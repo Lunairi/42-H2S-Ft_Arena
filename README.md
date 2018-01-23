@@ -4,18 +4,18 @@ A project I made for high school hack, a 42 high school curriculum that teaches 
 Ft_Arena Concepts: (Tier 1 Project)
 
 A) Child/Parent Class
-1a) creating class
-2a) class inheritance
+- 1a) creating class
+- 2a) class inheritance
 
 B) Storing data into classes
-1b) storing multiple class instances
-2b) accessing variables and class methods
+- 1b) storing multiple class instances
+- 2b) accessing variables and class methods
 
 C) Creating a simple game simulation via a simple container
-1c) managing while loops and conditions
-2c) creating fighters with unique behavior and stats
-3c) allow the characters to fight eachother
-4c) output the content to terminal
+- 1c) managing while loops and conditions
+- 2c) creating fighters with unique behavior and stats
+- 3c) allow the characters to fight eachother
+- 4c) output the content to terminal
 
 Requirements:
 Students are expected to create a parent class that all their
@@ -43,7 +43,7 @@ Addition heroes, additional special attack, additional stats or mechanism, sound
 
 
 Video Lessons:
-1) class defining and inheritance
-2) attr_accessor and class arrays
-3) accessing and getting info from class
-4) class interaction
+1) Class defining and inheritance
+2) Attr_accessor and class arrays
+3) Accessing and getting info from class
+4) Class interaction
