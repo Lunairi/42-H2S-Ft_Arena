@@ -1,6 +1,13 @@
 # 42-H2S-Ft_Arena
 A project I made for high school hack, a 42 high school curriculum that teaches students to program. This is the first project for teaching object oriented programming written in Ruby or Python.
 
+We were required to:
+- Write a pdf with detail instructions on how to complete the project and what is required
+- To write a grading scale for the students for when they turn in their project
+- To come up and design a unique project for the students
+- To create video tutorial with example code and a set script
+- To recreate our own created project to demo and show to students
+
 Ft_Arena Concepts: (Tier 1 Project)
 
 A) Child/Parent Class
@@ -45,4 +52,4 @@ Addition heroes, additional special attack, additional stats or mechanism, sound
 Video Lessons:
 1) Class defining and inheritance
 2) Attr_accessor and class arrays, accessing and getting info from class
-4) Class interaction
+3) Class interaction
